@@ -9,7 +9,6 @@
 
 #include <string>
 #include "statement.h"
-#include <typeinfo.h>
 #include "../StanfordCPPLib/error.h"
 #include "program.h"
 #include "../StanfordCPPLib/simpio.h"

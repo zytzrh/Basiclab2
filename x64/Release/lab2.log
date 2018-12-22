@@ -1,8 +1,31 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: 中间目录(x64\Release\)包含从另一个项目(lab2.vcxproj)共享的文件。   这会导致错误的清除和重新生成行为。
+  Basic.cpp
+  evalstate.cpp
+  exp.cpp
+  parser.cpp
+  program.cpp
   statement.cpp
+  error.cpp
+  lexicon.cpp
+d:\b homework\basic\lab2\stanfordcpplib\lexicon.cpp(312): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  simpio.cpp
+  strlib.cpp
+d:\b homework\basic\lab2\stanfordcpplib\strlib.cpp(66): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+d:\b homework\basic\lab2\stanfordcpplib\strlib.cpp(74): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+d:\b homework\basic\lab2\stanfordcpplib\strlib.cpp(91): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+d:\b homework\basic\lab2\stanfordcpplib\strlib.cpp(107): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+d:\b homework\basic\lab2\stanfordcpplib\strlib.cpp(119): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+d:\b homework\basic\lab2\stanfordcpplib\strlib.cpp(120): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+d:\b homework\basic\lab2\stanfordcpplib\strlib.cpp(133): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+d:\b homework\basic\lab2\stanfordcpplib\strlib.cpp(153): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+d:\b homework\basic\lab2\stanfordcpplib\strlib.cpp(219): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+d:\b homework\basic\lab2\stanfordcpplib\strlib.cpp(229): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  tokenscanner.cpp
+d:\b homework\basic\lab2\stanfordcpplib\tokenscanner.cpp(149): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+d:\b homework\basic\lab2\stanfordcpplib\tokenscanner.cpp(180): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
   正在生成代码
-  0 of 696 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
+  689 of 696 functions (99.0%) were compiled, the rest were copied from previous compilation.
+    6 functions were new in current compilation
     0 functions had inline decision re-evaluated but remain unchanged
   已完成代码的生成
-  lab2.vcxproj -> D:\Basic\windows_for_vs\x64\Release\Basic.exe
+  lab2.vcxproj -> D:\B homework\Basic\x64\Release\Basic.exe
