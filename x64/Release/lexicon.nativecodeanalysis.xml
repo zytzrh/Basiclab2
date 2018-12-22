@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\basic\windows_for_vs\lab2\stanfordcpplib</FILEPATH>
+      <FILENAME>lexicon.h</FILENAME>
+      <LINE>251</LINE>
+      <COLUMN>6</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Lexicon::iterator::index' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Lexicon::iterator::{ctor}</FUNCTION>
+    <DECORATED>??0iterator@Lexicon@@QEAA@XZ</DECORATED>
+    <FUNCLINE>251</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\basic\windows_for_vs\lab2\stanfordcpplib</FILEPATH>
+      <FILENAME>lexicon.h</FILENAME>
+      <LINE>251</LINE>
+      <COLUMN>6</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Lexicon::iterator::edgePtr' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Lexicon::iterator::{ctor}</FUNCTION>
+    <DECORATED>??0iterator@Lexicon@@QEAA@XZ</DECORATED>
+    <FUNCLINE>251</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\basic\windows_for_vs\lab2\stanfordcpplib</FILEPATH>
+      <FILENAME>lexicon.h</FILENAME>
+      <LINE>255</LINE>
+      <COLUMN>6</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Lexicon::iterator::edgePtr' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Lexicon::iterator::{ctor}</FUNCTION>
+    <DECORATED>??0iterator@Lexicon@@QEAA@PEBV1@_N@Z</DECORATED>
+    <FUNCLINE>255</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\basic\windows_for_vs\lab2\stanfordcpplib</FILEPATH>
+      <FILENAME>lexicon.cpp</FILENAME>
+      <LINE>233</LINE>
+      <COLUMN>9</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Lexicon::start' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Lexicon::{ctor}</FUNCTION>
+    <DECORATED>??0Lexicon@@QEAA@AEBV0@@Z</DECORATED>
+    <FUNCLINE>233</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\basic\windows_for_vs\lab2\stanfordcpplib</FILEPATH>
+      <FILENAME>lexicon.cpp</FILENAME>
+      <LINE>233</LINE>
+      <COLUMN>9</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Lexicon::edges' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Lexicon::{ctor}</FUNCTION>
+    <DECORATED>??0Lexicon@@QEAA@AEBV0@@Z</DECORATED>
+    <FUNCLINE>233</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\basic\windows_for_vs\lab2\stanfordcpplib</FILEPATH>
+      <FILENAME>lexicon.cpp</FILENAME>
+      <LINE>233</LINE>
+      <COLUMN>9</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Lexicon::numEdges' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Lexicon::{ctor}</FUNCTION>
+    <DECORATED>??0Lexicon@@QEAA@AEBV0@@Z</DECORATED>
+    <FUNCLINE>233</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\basic\windows_for_vs\lab2\stanfordcpplib</FILEPATH>
+      <FILENAME>lexicon.cpp</FILENAME>
+      <LINE>233</LINE>
+      <COLUMN>9</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Lexicon::numDawgWords' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Lexicon::{ctor}</FUNCTION>
+    <DECORATED>??0Lexicon@@QEAA@AEBV0@@Z</DECORATED>
+    <FUNCLINE>233</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\basic\windows_for_vs\lab2\stanfordcpplib</FILEPATH>
+      <FILENAME>map.h</FILENAME>
+      <LINE>655</LINE>
+      <COLUMN>6</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Map&lt;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;,bool&gt;::iterator::mp' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Map&lt;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;,bool&gt;::iterator::{ctor}</FUNCTION>
+    <DECORATED>??0iterator@?$Map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@_N@@QEAA@XZ</DECORATED>
+    <FUNCLINE>655</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\basic\windows_for_vs\lab2\stanfordcpplib</FILEPATH>
+      <FILENAME>map.h</FILENAME>
+      <LINE>655</LINE>
+      <COLUMN>6</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Map&lt;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;,bool&gt;::iterator::index' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Map&lt;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;,bool&gt;::iterator::{ctor}</FUNCTION>
+    <DECORATED>??0iterator@?$Map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@_N@@QEAA@XZ</DECORATED>
+    <FUNCLINE>655</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\basic\windows_for_vs\lab2\stanfordcpplib</FILEPATH>
+      <FILENAME>map.h</FILENAME>
+      <LINE>199</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Map&lt;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;,bool&gt;::BSTNode::right' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Map&lt;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;,bool&gt;::BSTNode::{ctor}</FUNCTION>
+    <DECORATED>??0BSTNode@?$Map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@_N@@QEAA@XZ</DECORATED>
+    <FUNCLINE>199</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\basic\windows_for_vs\lab2\stanfordcpplib</FILEPATH>
+      <FILENAME>map.h</FILENAME>
+      <LINE>199</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Map&lt;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;,bool&gt;::BSTNode::left' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Map&lt;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;,bool&gt;::BSTNode::{ctor}</FUNCTION>
+    <DECORATED>??0BSTNode@?$Map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@_N@@QEAA@XZ</DECORATED>
+    <FUNCLINE>199</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\basic\windows_for_vs\lab2\stanfordcpplib</FILEPATH>
+      <FILENAME>map.h</FILENAME>
+      <LINE>199</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Map&lt;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;,bool&gt;::BSTNode::value' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Map&lt;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;,bool&gt;::BSTNode::{ctor}</FUNCTION>
+    <DECORATED>??0BSTNode@?$Map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@_N@@QEAA@XZ</DECORATED>
+    <FUNCLINE>199</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\basic\windows_for_vs\lab2\stanfordcpplib</FILEPATH>
+      <FILENAME>map.h</FILENAME>
+      <LINE>199</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Map&lt;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;,bool&gt;::BSTNode::bf' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Map&lt;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;,bool&gt;::BSTNode::{ctor}</FUNCTION>
+    <DECORATED>??0BSTNode@?$Map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@_N@@QEAA@XZ</DECORATED>
+    <FUNCLINE>199</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\basic\windows_for_vs\lab2\stanfordcpplib</FILEPATH>
+      <FILENAME>set.h</FILENAME>
+      <LINE>380</LINE>
+      <COLUMN>16</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Set&lt;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt; &gt;::removeFlag' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Set&lt;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt; &gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$Set@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@@QEAA@XZ</DECORATED>
+    <FUNCLINE>380</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\basic\windows_for_vs\lab2\stanfordcpplib</FILEPATH>
+      <FILENAME>map.h</FILENAME>
+      <LINE>618</LINE>
+      <COLUMN>3</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Map&lt;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;,bool&gt;::nodeCount' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Map&lt;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;,bool&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$Map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@_N@@QEAA@AEBV0@@Z</DECORATED>
+    <FUNCLINE>618</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\basic\windows_for_vs\lab2\stanfordcpplib</FILEPATH>
+      <FILENAME>map.h</FILENAME>
+      <LINE>618</LINE>
+      <COLUMN>3</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Map&lt;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;,bool&gt;::root' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Map&lt;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;,bool&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$Map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@_N@@QEAA@AEBV0@@Z</DECORATED>
+    <FUNCLINE>618</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\basic\windows_for_vs\lab2\stanfordcpplib</FILEPATH>
+      <FILENAME>map.h</FILENAME>
+      <LINE>618</LINE>
+      <COLUMN>3</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Map&lt;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;,bool&gt;::cmpp' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Map&lt;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;,bool&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$Map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@_N@@QEAA@AEBV0@@Z</DECORATED>
+    <FUNCLINE>618</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\basic\windows_for_vs\lab2\stanfordcpplib</FILEPATH>
+      <FILENAME>map.h</FILENAME>
+      <LINE>618</LINE>
+      <COLUMN>3</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Map&lt;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;,bool&gt;::cmpFn' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Map&lt;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;,bool&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$Map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@_N@@QEAA@AEBV0@@Z</DECORATED>
+    <FUNCLINE>618</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\basic\windows_for_vs\lab2\stanfordcpplib</FILEPATH>
+      <FILENAME>map.h</FILENAME>
+      <LINE>733</LINE>
+      <COLUMN>24</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Map&lt;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;,bool&gt;::cmpFn' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Map&lt;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;,bool&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$Map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@_N@@QEAA@XZ</DECORATED>
+    <FUNCLINE>733</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

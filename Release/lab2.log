@@ -1,0 +1,15 @@
+﻿  Basic.cpp
+  evalstate.cpp
+  exp.cpp
+  parser.cpp
+  program.cpp
+  statement.cpp
+  error.cpp
+  lexicon.cpp
+  simpio.cpp
+  strlib.cpp
+  tokenscanner.cpp
+  正在生成代码
+  All 631 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  已完成代码的生成
+  lab2.vcxproj -> D:\Basic\windows_for_vs\Release\Basic.exe
