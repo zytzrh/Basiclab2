@@ -54,6 +54,9 @@
     <ClCompile Include="StanfordCPPLib\simpio.cpp">
       <Filter>Source Files\lib</Filter>
     </ClCompile>
+    <ClCompile Include="Basic\parsestatement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Basic\evalstate.h">
@@ -100,6 +103,9 @@
     </ClInclude>
     <ClInclude Include="StanfordCPPLib\private\main.h">
       <Filter>Header Files\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="Basic\parsestatement.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

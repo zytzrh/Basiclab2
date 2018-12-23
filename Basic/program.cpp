@@ -14,9 +14,7 @@
 #include <map>
 using namespace std;
 
-Program::Program() {
-   // Replace this stub with your own code
-}
+Program::Program() {}
 
 Program::~Program() {
 	clear();
@@ -31,37 +29,29 @@ void Program::clear() {
 }
 
 void Program::addSourceLine(int lineNumber, string line) {
-	//stringtable.insert(pair<int, string>(lineNumber, line));
+	removeSourceLine(lineNumber);
 	stringtable[lineNumber] = line;
 }
 
 void Program::removeSourceLine(int lineNumber) {
-	iterstate = statementtable.find(lineNumber);
-	if(iterstate != statementtable.end())	statementtable.erase(iterstate);
 	iterstringtablle = stringtable.find(lineNumber);
 	if (iterstringtablle != stringtable.end())	stringtable.erase(iterstringtablle);
 }
 
-string Program::getSourceLine(int lineNumber) {
-   return "";    // Replace this stub with your own code
-}
-
 void Program::setParsedStatement(int lineNumber, Statement *stmt) {
-	//statementtable.insert(pair<int, Statement *>(lineNumber, stmt));
+	removeParsedStatement(lineNumber);
 	statementtable[lineNumber] = stmt;
 }
 
-Statement *Program::getParsedStatement(int lineNumber) {
-   return NULL;  // Replace this stub with your own code
+void Program::removeParsedStatement(int lineNumber)
+{	
+	iterstate = statementtable.find(lineNumber);
+	if (iterstate != statementtable.end()) {
+		delete iterstate->second;
+		statementtable.erase(iterstate);
+	}
 }
 
-int Program::getFirstLineNumber() {
-   return 0;     // Replace this stub with your own code
-}
-
-int Program::getNextLineNumber(int lineNumber) {
-   return 0;     // Replace this stub with your own code
-}
 
 void Program::findAndGoto(int lineNumber) {
 	iterstate = statementtable.find(lineNumber);

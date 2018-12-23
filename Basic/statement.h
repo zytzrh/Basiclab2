@@ -133,7 +133,7 @@ public:
 	virtual ~IF();
 	virtual StatementType getType();
 };
-
+/*REM*/
 class REM : public Statement {
 public:
 	virtual void execute(EvalState & state);

@@ -115,6 +115,7 @@
     <ClCompile Include="Basic\evalstate.cpp" />
     <ClCompile Include="Basic\exp.cpp" />
     <ClCompile Include="Basic\parser.cpp" />
+    <ClCompile Include="Basic\parsestatement.cpp" />
     <ClCompile Include="Basic\program.cpp" />
     <ClCompile Include="Basic\statement.cpp" />
     <ClCompile Include="StanfordCPPLib\error.cpp" />
@@ -127,6 +128,7 @@
     <ClInclude Include="Basic\evalstate.h" />
     <ClInclude Include="Basic\exp.h" />
     <ClInclude Include="Basic\parser.h" />
+    <ClInclude Include="Basic\parsestatement.h" />
     <ClInclude Include="Basic\program.h" />
     <ClInclude Include="Basic\statement.h" />
     <ClInclude Include="StanfordCPPLib\error.h" />

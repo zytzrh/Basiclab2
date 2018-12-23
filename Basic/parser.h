@@ -34,9 +34,6 @@ Expression *parseExp(TokenScanner & scanner);
 
 Expression *readE(TokenScanner & scanner, int prec = 0);
 
-/*用于扫描if a ( < or = or > ) b中的a且留下运算符在scanner中*/
-Expression *parsecompound1(TokenScanner & scanner);
-
 /*用于扫描if a ( < or = or > ) b中的b不留下THEN在scanner中*/
 Expression *parsecompound2(TokenScanner & scanner);
 

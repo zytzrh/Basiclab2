@@ -14,6 +14,7 @@
 #include "exp.h"
 #include "parser.h"
 #include "program.h"
+#include "parsestatement.h"
 #include "../StanfordCPPLib/error.h"
 #include "../StanfordCPPLib/tokenscanner.h"
 
@@ -64,72 +65,37 @@ void processLine(string line, Program & program, EvalState & state) {
    if (type == NUMBER) {
 	   if (!scanner.hasMoreTokens()) {
 		   program.removeSourceLine(stringToInteger(beginword));
+		   program.removeParsedStatement(stringToInteger(beginword));
 		   return;
 	   }
 	   string beginword2 = scanner.nextToken();
+	   Statement *tmp;
 	   if (beginword2 == "LET") {
-		   Expression *exp = parseExp(scanner);
-		   if (exp->getType() != COMPOUND)
-			   error("SYNTAX ERROR");
-		   if (((CompoundExp *)exp)->getLHS()->getType() != IDENTIFIER || ((CompoundExp *)exp)->getOp() != "=" || ((CompoundExp *)exp)->getRHS()->hasequation() == true)
-			   error("SYNTAX ERROR");
-		   LET *tmp = new LET((CompoundExp*)exp);
-		   program.setParsedStatement(stringToInteger(beginword), tmp);
-		   program.addSourceLine(stringToInteger(beginword), line);
+		   tmp = parseLET(scanner);
 	   }
 	   else if (beginword2 == "PRINT") {
-		   Expression *exp = parseExp(scanner);
-		   if (exp->hasequation())
-			   error("SYNTAX ERROR");
-		   PRINT *tmp = new PRINT(exp);
-		   program.setParsedStatement(stringToInteger(beginword), tmp);
-		   program.addSourceLine(stringToInteger(beginword), line);
+		   tmp = parsePRINT(scanner);
 	   }
 	   else if (beginword2 == "INPUT") {
-		   Expression *exp = parseExp(scanner);
-		   if (exp->getType() != IDENTIFIER)
-			   error("SYNTAX ERROR");
-		   INPUT *tmp = new INPUT((IdentifierExp *)exp);
-		   program.setParsedStatement(stringToInteger(beginword), tmp);
-		   program.addSourceLine(stringToInteger(beginword), line);
+		   tmp = parseINPUT(scanner);
 	   }
 	   else if (beginword2 == "END") {
-		   if (scanner.hasMoreTokens())
-			   error("SYNTAX ERROR");
-		   END *tmp = new END;
-		   program.setParsedStatement(stringToInteger(beginword), tmp);
-		   program.addSourceLine(stringToInteger(beginword), line);
+		   tmp = parseEND(scanner);
 	   }
 	   else if (beginword2 == "GOTO") {
-		   Expression *exp = parseExp(scanner);
-		   if (exp->getType() != CONSTANT)
-			   error("SYNTAX ERROR");
-		   GOTO *tmp = new GOTO((ConstantExp *)exp);
-		   program.setParsedStatement(stringToInteger(beginword), tmp);
-		   program.addSourceLine(stringToInteger(beginword), line);
+		   tmp = parseGOTO(scanner);
 	   }
 	   else if (beginword2 == "IF") {
-		   Expression *exp = parsecompound2(scanner);
-		   if (exp->getType() != COMPOUND) 
-			   error("SYNTAX ERROR");
-		   if(!exp->hasequation() || ((CompoundExp*)exp)->getLHS()->hasequation() || ((CompoundExp*)exp)->getRHS()->hasequation() || !scanner.hasMoreTokens())
-			   error("SYNTAX ERROR");
-		   Expression *number = parseExp(scanner);
-		   if (number->getType() != CONSTANT)
-			   error("SYNTAX ERROR");
-		   IF *tmp = new IF((CompoundExp*)exp, number->eval(state));
-		   delete number;
-		   program.setParsedStatement(stringToInteger(beginword), tmp);
-		   program.addSourceLine(stringToInteger(beginword), line);
+		   tmp = parseIF(scanner);
 	   }
 	   else if(beginword2 == "REM"){
-		   REM *tmp = new REM;
-		   program.setParsedStatement(stringToInteger(beginword), tmp);
-		   program.addSourceLine(stringToInteger(beginword), line);
+		   tmp = parseREM(scanner);
 	   }
 	   else {
 		   error("SYNTAX ERROR");
 	   }
+	   program.setParsedStatement(stringToInteger(beginword), tmp);
+	   program.addSourceLine(stringToInteger(beginword), line);
    }
    else {
 	   if (beginword == "RUN") {
@@ -149,33 +115,20 @@ void processLine(string line, Program & program, EvalState & state) {
 		   cout << "Yet another basic interpreter";
 	   }
 	   else if (beginword == "LET") {
-		   Expression *exp = parseExp(scanner);
-		   if (exp->getType() != COMPOUND)
-			   error("SYNTAX ERROR");
-		   if (((CompoundExp *)exp)->getLHS()->getType() != IDENTIFIER || ((CompoundExp *)exp)->getOp() != "=" || ((CompoundExp *)exp)->getRHS()->hasequation() == true)
-			   error("SYNTAX ERROR");
-		   LET *tmp = new LET((CompoundExp*)exp);
+		   Statement *tmp = parseLET(scanner);
 		   tmp->execute(state);
 	   }
 	   else if (beginword == "PRINT") {
-		   Expression *exp = parseExp(scanner);
-		   if (exp->hasequation())
-			   error("SYNTAX ERROR");
-		   PRINT *tmp = new PRINT(exp);
+		   Statement *tmp = parsePRINT(scanner);
 		   tmp->execute(state);
 	   }
 	   else if (beginword == "INPUT") {
-		   Expression *exp = parseExp(scanner);
-		   if (exp->getType() != IDENTIFIER)
-			   error("SYNTAX ERROR");
-		   INPUT *tmp = new INPUT((IdentifierExp *)exp);
+		   Statement *tmp = parseINPUT(scanner);
 		   tmp->execute(state);
 	   }
 	   else {
 		   error("SYNTAX ERROR");
 	   }
    }
-   //scanner.saveToken(beginword);
-   
 }
 

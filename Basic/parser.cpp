@@ -9,7 +9,6 @@
 
 #include "exp.h"
 #include "parser.h"
-
 #include "../StanfordCPPLib/error.h"
 #include "../StanfordCPPLib/strlib.h"
 #include "../StanfordCPPLib/tokenscanner.h"
@@ -29,20 +28,6 @@ Expression *parseExp(TokenScanner & scanner) {
 	return exp;
 }
 
-Expression *parsecompound1(TokenScanner & scanner) {
-	Expression *exp = readE(scanner);
-	if (!scanner.hasMoreTokens()) {
-		error("SYNTAX ERROR");
-	}
-	string tmp = scanner.nextToken();
-	if (tmp == "=" || tmp == ">" || tmp == "<") {
-		scanner.saveToken(tmp);
-		return exp;
-	}
-	else {
-		error("SYNTAX ERROR");
-	}
-}
 
 Expression *parsecompound2(TokenScanner & scanner) {
 	Expression *exp = readE(scanner);
